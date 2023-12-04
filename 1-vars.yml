@@ -8,8 +8,8 @@
 - name: Demo on vars
   hosts: localhost
   Vars:
-    URL: numbers.com
+    URL:  numbers.com
   tasks:
     - name: print a variable
       ansible.builtin.debug:
-        msg: "{{7}}"
+        msg: "{{ 7 }}"
