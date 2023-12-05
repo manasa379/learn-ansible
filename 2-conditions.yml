@@ -1,5 +1,5 @@
 - name: Demo on conditions
-  hosts: local host
+  hosts: localhost
   tasks:
     - name: print Rose colour
       ansible.builtin.debug:
