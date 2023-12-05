@@ -27,7 +27,7 @@
         URL: task.example.com
     - name: print play variable
       ansible.builtin.debug:
-        msg: "{{ URL1 }}"
+        msg: "{{ URL }}"
 - name: Demo on roles varibles
   hosts: localhost
   roles:
