@@ -14,3 +14,11 @@
       ansible.builtin.debug:
         msg: "{{ URL }}"
 
+- name: Demo on task level variable
+  hosts: localhost
+  tasks:
+    - name: print a variable
+      ansible.builtin.debug:
+        msg: "{{ URL }}"
+      vars:
+        URL: example.com
