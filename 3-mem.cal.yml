@@ -2,9 +2,9 @@
   hosts: localhost
   tasks:
     - name: Get Memory
-      ansible.builtin.shell: free | grep mem | xargs
+      ansible.builtin.shell: free | grep Mem | xargs
       register: free
 
     - name: print free variable
       ansible.builtin.debug:
-      msg: "{{ free.stdout | split(' ')[0] }}"
+      msg: "{{ free.stdout | split(' ') }}"
