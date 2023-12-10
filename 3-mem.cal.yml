@@ -5,6 +5,6 @@
       ansible.builtin.shell: free | grep Mem | xargs
       register: free
 
-    - name: set fact
+    - name: set a fact
       ansible.builtin.set_fact:
       FREE: "{{ free.stdout | split(' ') }}"
