@@ -1,6 +1,6 @@
 - name: Demo
   hosts: localhost
   tasks:
-    - name: Get a parameter from parameterstore
+    - name: Get a parameter from parameter store
       ansible.builtin.debug:
         msg: "{{ lookup ('aws_ssm','test',region='us-east-1') }}"
