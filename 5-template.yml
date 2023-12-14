@@ -1,6 +1,6 @@
 - name: Print role variable
   ansible.builtin.debug:
-  msg: "URL=  {{ URL }}"
+  msg: "URL{{ URL }}"
 
 - name: Copy file
   ansible.builtin.copy:
